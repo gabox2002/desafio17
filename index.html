@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bibimbap</title>
+	<link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+	<header>
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<div class="container-logo">
+					<i class="fa-solid fa-bowl-food"></i>
+					<h1 class="logo"><a href="/">Bibimbap</a></h1>
+				</div>
+				<i class="fa-solid fa-bars"></i>
+				<ul class="menu">
+					<li><a href="#">Menú</a></li>
+					<li><a href="#">Categorías</a></li>
+					<li><a href="#">Nosotros</a></li>
+				</ul>
+
+				<form class="search-form">
+					<input type="search" placeholder="Buscar..." />
+					<button class="btn-search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+				<div class="container-user">
+					<div class="content-shopping-cart">
+						<div class="notification">0</div>
+						<i class="fa-solid fa-shopping-cart cart"></i>
+					</div>
+					<i class="fa-solid fa-user"></i>
+				</div>
+			</nav>
+		</div>
+		<!-- inicio cart modal -->
+		<div class="cart-modal">
+			<p class="cart-modal__title">Carrito de compras</p>
+			<div class="cart-modal__checkout-container">
+				<div class="cart-modal__details-container">
+					<!-- Aquí se insertarán dinámicamente los detalles del producto agregado al carrito -->
+				</div>
+				<p class="cart-modal__empty-message" id="emptyCartMessage">El carrito está vacío.</p>
+				<div class="cart-modal__subtotal" id="subtotalContainer">
+					<span>Monto total:</span>
+					<span id="totalAmount">$0.00</span>
+				</div>
+				<div class="cart-modal__buttons">
+					<button onclick="clearCart()" class="cart-modal__clear">Vaciar carrito</button>
+					<button class="cart-modal__checkout">Comprar</button>
+				</div>
+			</div>
+		  </div>
+		  <!-- fin cart modal -->
+
+          <!-- inicio formulario modal  -->
+        <div id="modal" class="form-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Ingrese su información</h2>
+                <form id="orderForm" class="form">
+                    <label for="nombreUsuario">Nombre:</label>
+                    <input type="text" id="nombreUsuario" required>
+
+                    <label for="direccionEntrega">Dirección:</label>
+                    <input type="text" id="direccionEntrega" required>
+
+                    <label for="provinciaEntrega"></label>
+                    <select id="provinciaEntrega" required>
+                        <option value="" disabled selected>Seleccione una provincia</option>
+                        <option value="CABA">CABA</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label for="numeroTelefono">Número de teléfono:</label>
+                    <input type="number" id="numeroTelefono" required>
+
+                    <label for="correoElectronico">Correo electrónico:</label>
+                    <input type="email" id="correoElectronico" required>
+
+                    <button class="buttonSend" id="submitOrder" type="button" onclick="submitOrder()">Realizar Pedido</button>
+                </form>
+            </div>
+        </div>
+		  <!-- fin formulario modal -->
+	</header>
+
+	<main class="container">
+		<h1 class="heading-1">Productos del menú</h1>
+		<div class="container-products">
+			<div id="menuContainer" class="menu-container">
+				<!-- La lista de productos se generará aquí -->
+			</div>
+		</div>
+	</main>
+		
+	<footer class="footer">
+		<div class="container container-footer">
+			<div class="menu-footer">
+
+				<div class="information">
+					<p class="title-footer">Información</p>
+					<ul>
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">Categorías</a></li>
+						<li><a href="#">Contactános</a></li>
+					</ul>
+				</div>
+				<div class="my-account">
+					<p class="title-footer">Mi cuenta</p>
+
+					<ul>
+						<li><a href="#">Mi cuenta</a></li>
+						<li><a href="#">Historial de ordenes</a></li>
+						<li><a href="#">Lista de deseos</a></li>
+					</ul>
+				</div>
+				<div class="boxes">
+					<h3>"Lo mejor de nuestra cultura coreana"</h3> 
+					<img src="./images/banderacorea.png">
+					<div class="social-icons">
+						<span class="tiktok">
+							<i class="fa-brands fa-tiktok"></i>
+						</span>
+						<span class="youtube">
+							<i class="fa-brands fa-youtube"></i>
+						</span>
+						<span class="whatsapp">
+							<i class="fa-brands fa-whatsapp"></i>
+						</span>
+						<span class="instagram">
+							<i class="fa-brands fa-instagram"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="copyright">
+				<p>
+					Desarrollado por Gabriel Quispe &copy; 2024
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

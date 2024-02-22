@@ -1,0 +1,75 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "nombre": "Bulgogi",
+      "descripcion": "Carne marinada a la parrilla con salsa de soja, morrón, ajo y azúcar",
+      "precio": 15.99,
+      "imagen": "./images/bulgogi.png"
+
+    },
+    {
+      "id": 2,
+      "nombre": "Takgalbi",
+      "descripcion": "Pollo a la parrilla jugoso marinado con salsa picante y verduras",
+      "precio": 14.99,
+      "imagen": "./images/takkalbi.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Bibimbap",
+      "descripcion": "Arroz mezclado con verduras, carne, huevo y gochujang (pasta de chile)",
+      "precio": 12.99,
+      "imagen": "./images/bibimbap.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Jajangmyeon",
+      "descripcion": "Fideos de trigo con una salsa espesa de frijoles negros y carne",
+      "precio": 11.99,
+      "imagen": "./images/jajangmyeon.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Kimchi",
+      "descripcion": "Repollo fermentado picante sazonada con una mezcla única de especias",
+      "precio": 13.99,
+      "imagen": "./images/kimchi.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Samgyetang",
+      "descripcion": "Sopa de pollo relleno de arroz, ginseng y jujubes",
+      "precio": 16.99,
+      "imagen": "./images/samgyetang.png"
+    },
+    {
+      "id": 7,
+      "nombre": "Naengmyeon",
+      "descripcion": "Fideos fríos con caldo a base de carne y salsa de mostaza",
+      "precio": 10.99,
+      "imagen": "./images/naengmyeon.png"
+    },
+    {
+      "id": 8,
+      "nombre": "Buchimgae",
+      "descripcion": "Tortitas coreanas hechas de harina de arroz, cebollín, camarones y vegetales",
+      "precio": 12.99,
+      "imagen": "./images/buchimgae.png"
+    },
+  {
+      "id": 9,
+      "nombre": "Kimbap",
+      "descripcion": "Rollo de arroz envuelto en alga que se rellena con vegetales, huevo y carne",
+      "precio": 14.95,
+      "imagen": "./images/kimbap.png"
+    },
+  {
+      "id": 10,
+      "nombre": "Chowmein",
+      "descripcion": "Tallarines largos servida con tiras de pollo y algunas verduras salteadas",
+      "precio": 10.99,
+      "imagen": "./images/chowmein.png"
+    }
+  ]
+  }
